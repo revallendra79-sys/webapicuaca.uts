@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Cuaca Real-time</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> Monitoring Cuaca</h1>
+            <button id="theme-toggle" aria-label="Toggle Tema Gelap/Terang">
+            <i class="fas fa-moon"></i>
+            </button>
+            
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="city-input" placeholder="Masukkan Nama Kota..." value="Bojonegoro">
+            <button id="search-btn"><i class="fas fa-search"></i> Cari</button>
+        </div>
+
+        <div id="weather-data">
+            <p class="loading-message">Memuat data cuaca...</p>
+        </div>
+
+        <div id="forecast-data">
+            <h2><i class="fas fa-chart-line"></i> Prakiraan Suhu 24 Jam</h2>
+            <div class="forecast-container">
+                <p class="loading-message">Memuat prakiraan...</p>
+            </div>
+        </div>
+
+        <footer id="last-updated">
+            Terakhir diperbarui: -
+        </footer>
+         <h3>By Revallendra Novla P. E. </h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
